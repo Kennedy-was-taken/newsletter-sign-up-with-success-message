@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link href="./Css/stylesheet.css" rel="stylesheet">
+    
+  <title> Kagiso Ramothwala | Newsletter sign-up form with success message </title>
+
+</head>
+<body>
+  <form id="newsletterform">
+
+  <div class="container">
+    
+    <div class="headcontainer">
+   
+    <div class="imagecontainer">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" class="signupimage" alt="illustration-sign-up-desktop"> 
+    </div>
+
+    <div class="imagecontainermobile">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" class="signupimagemobile" alt="illustration-sign-up-desktop-mobile"> 
+    </div>
+    
+    <div class="contentcontainer">
+        
+
+      <div class="newslettersignup">
+      Stay updated!
+      </div>
+
+      <div class="newsletterdescription">
+      Join 60,000+ product managers receiving monthly updates on:
+      </div>
+
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+
+      <div class="textbox">  
+        <input type="email" placeholder="email@company.com"  id="emailaddress" class="input" required>
+        <label>Email Address</label>
+     
+      </div>
+
+      <button class="newslettersignupbutton" id="submitbutton" type="submit" required>
+      Subscribe to monthly newsletter
+      </button>
+      
+    </div>
+  
+  </form>
+  </div>
+  
+</div>
+
+
+
+<div class="confirmationmessagecontainer" id="confirmationmessagecontainer">
+
+<div class="contentcontainer">
+
+  <div class="confirmationmessageimage">
+    <img src="./assets/images/icon-success.svg" alt="iconsuccess">
+  </div>
+
+  <div class="confirmationmessageicon">  
+  Thanks for subscribing!
+  </div>
+
+  <div class="confirmationmessagedescription">
+  A confirmation email has been sent to <span id="emailladressplacement">ash@loremcompany.com</span>  
+  Please open it and click the button inside to confirm your subscription.
+  </div>
+  </div>
+
+  <button class="confirmationmessagebutton" id="confirmationmessagebuttonclose" type="button">
+  Dismiss message
+  </button>
+
+</div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+  <script src="./Javascript/stylesheet.js"></script>
+</body>
+</html>

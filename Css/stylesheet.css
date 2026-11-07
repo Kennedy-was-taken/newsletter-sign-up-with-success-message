@@ -1,0 +1,386 @@
+@font-face {
+  font-family:'Roboto-Regular'; 
+  src: url('../assets/fonts/Roboto-Regular.ttf');        
+  font-weight: normal;   
+  font-style: normal; 
+}
+
+@font-face {
+  font-family:'Roboto-Bold'; 
+  src: url('../assets/fonts/Roboto-Bold.ttf');   
+  font-weight: bold;   
+  font-style: normal; 
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(235, 18%, 26%);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.headcontainer{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 20px;
+  
+}
+
+.container{
+  display: flex;
+  border-style: unset;
+  border-width: 0px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 379px;
+  background-color: white;
+  width: 568px;
+
+}
+
+.contentcontainer{
+  margin-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+
+.signupimage{
+  height: 341px;
+
+}
+
+.signupimagemobile{
+  display: none;
+}
+
+.newslettersignup{
+  font-size: 45px;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  color: hsl(233, 33%, 20%);
+  font-family: Roboto-bold;
+
+}
+
+
+
+.newsletterdescription{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-family: Roboto-regular;
+    
+}
+
+
+ul{
+  list-style-image: url("../assets/images/icon-list.svg");
+  margin-inline: -14px;
+  font-size: 13px;
+  font-family: Roboto-regular;
+}
+
+    
+.textbox{
+  position: relative;
+  width: 205px;
+    
+}
+
+input{
+  width: 283px;
+  height: 42px;
+  outline: none;
+  font-family: Roboto-regular;
+}
+
+label{
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  color: transparent;
+  transition: 0.5s;
+  padding: 0 5px;
+  font-family: Roboto-regular;
+}
+
+input:focus+label,
+input:valid+label{
+  top: -8px;
+  font-size: 14px;
+  color: red;
+  background-color: white;
+}
+
+.newslettersignupbutton{
+  height: 49px;
+  width: 292px;
+  font-size: 11px;
+  color: white;
+  background-color: hsl(234, 30%, 19%);
+  border-radius: 7px;
+  border-style: unset;
+  font-family: Roboto-regular;
+    
+}
+
+.newslettersignupbutton:hover{
+  background: linear-gradient(to right, hsl(347, 100%, 68%), hsl(7, 100%, 65%),hsl(13, 100%, 62%));
+  color: white;
+  transform: translateY(-2px);
+
+}
+    
+
+.confirmationmessagecontainer{
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  width: 341px;
+  height: 313px;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+
+    
+    
+.confirmationmessageicon{
+  font-size: 34px;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  color: hsl(233, 33%, 20%);
+  font-family: Roboto-bold;
+    
+}
+
+.confirmationmessageimage{
+ height: 43px; 
+ padding-bottom: 10px;
+}
+
+    
+    
+.confirmationmessagedescription{
+  padding-bottom: 5px;
+  font-size: 11px;
+}
+
+    
+    
+.confirmationmessagebutton{
+width: 254px;
+height: 40px;
+background-color: hsl(232, 31%, 20%);
+border-radius: 10px;
+border-style: unset;
+color: white;
+}
+
+.confirmationmessagebutton:hover{
+    background: linear-gradient(to right, hsl(347, 100%, 68%), hsl(7, 100%, 65%),hsl(13, 100%, 62%));
+    color: white;
+    transform: translateY(-2px);
+}
+   
+
+@media (max-width: 375px) {
+
+    .container{
+    display: flex;
+    flex-direction: row;
+    border-style: unset;
+    border-width: 2px;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 592px;
+    width: 340px;
+    }
+
+
+    .headcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 20px;
+    }
+    
+
+    .contentcontainer{
+    margin-inline: 47px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+    font-size: 13px;
+    padding-bottom: 35px;
+    }
+
+
+    .signupimage{
+    display: none;
+    }
+
+    .signupimagemobile{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 258px;
+    padding-bottom: 16px;
+    }
+
+    .newslettersignup{
+    font-size: 38px;
+    font-weight: bold;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: hsl(233, 33%, 20%);
+    }
+
+    .newsletterdescription{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      margin-inline: 13px;
+    }
+
+    .newsletterdescriptionlist{
+      font-size: 13px;
+    margin-inline: 12px;
+    }
+
+     .textbox {
+    position: relative;
+    width: 20px;
+    }
+
+    input {
+    outline: none;
+    width: 262px;
+    height: 37px;
+    margin-inline: 20px;
+    }
+
+    label{
+      position: absolute;
+      left: 12px;
+      top: 14px;
+      color: transparent;
+      transition: 0.5s;
+      padding: 0 5px;
+      margin-inline: 20px;
+    }
+
+    input:focus+label,
+    input:valid+label{
+      top: -8px;
+      font-size: 10px;
+      color: red;
+      background-color: white;
+    }
+
+
+    .newslettersignupbutton{
+      height: 42px;
+      width: 271px;
+      font-size: 11px;
+      color: white;
+      background-color: hsl(234, 30%, 19%);
+      border-radius: 7px;
+      border-style: unset;
+      margin-inline: 20px;
+    }
+
+    .newslettersignupbutton:hover{
+      display: none;
+    }
+
+    ul{
+      list-style-image: url("../assets/images/icon-list.svg");
+      font-size: 13px;
+      font-family: Roboto-regular;
+    }
+
+
+    .confirmationmessagecontainer{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .confirmationmessageicon{
+      font-size: 34px;
+      font-weight: bold;
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      color: hsl(233, 33%, 20%);
+      font-family:'Roboto-Regular';
+      padding-bottom: 5px;
+    }
+
+  .confirmationmessageimage {
+    height: 43px;
+    padding-bottom: 33px;
+  }
+    
+
+    .confirmationmessagedescription{
+     font-size: 15px;
+    padding-bottom: 398px;
+    font-family: 'Roboto-Regular';
+
+    }
+
+    .confirmationmessagebutton{
+    width: 313px;
+    height: 59px;
+    background-color: hsl(232, 31%, 20%);
+    border-radius: 10px;
+    border-style: unset;
+    margin-inline: 20px;
+    font-family: 'Roboto-Bold';
+    }
+
+    .confirmationmessagebutton:hover{
+    display: none;
+    }
+    .signupimage{
+    display: none;
+    }
+
+    .attribution{
+      padding-top: 10px;
+      font-size: 12px;
+    }
+
+}
